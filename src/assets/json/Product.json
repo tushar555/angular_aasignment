@@ -1,0 +1,34 @@
+{
+
+"products" :    [
+    {
+        "productId" : "p1",
+        "name" : "LG TV"
+    },
+    {
+        "productId" : "p2",
+        "name" : "Samsung TV"
+    },
+    {
+        "productId" : "p3",
+        "name" : "Onida TV"
+    },
+    {
+        "productId" : "p4",
+        "name" : "LG AC"
+    },
+    {
+        "productId" : "p5",
+        "name" : "MI Note 3"
+    },
+    {
+        "productId" : "p6",
+        "name" : "MI Note 4"
+    },
+    {
+        "productId" : "p7",
+        "name" : "LLoyed AC"
+    }
+
+]
+}

@@ -1,0 +1,27 @@
+
+{
+"orders" : [
+   {
+        "orderId" : "aaa",
+        "customerId" : "c1",
+        "product" : "p1",
+        "quantity" : 1
+   },
+
+   {
+    "orderId" : "bbb",
+    "customerId" : "c3",
+    "product" : "p2",
+    "quantity" : 3
+   },
+   {
+
+    "orderId" : "ccc",
+    "customerId" : "c2",
+    "product" : "p3",
+    "quantity" : 5
+
+   }
+
+]
+}

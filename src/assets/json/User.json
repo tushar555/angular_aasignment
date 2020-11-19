@@ -1,0 +1,27 @@
+{
+
+    "customers" : [
+        {
+            "customerId" : "c1",
+             "name" : "customer#1",
+             "password" : "abc@123"
+        },
+        {
+            "customerId" : "c1",
+             "name" : "customer#2",
+             "password" : "efg@123"
+        },
+        {
+            "customerId" : "c1",
+            "name" : "customer#3",
+            "password" : "lmn@123"
+        },
+
+        {
+
+            "customerId" : "admin",
+            "name" : "admin",
+            "password" : "admin"
+        }
+    ]
+}
