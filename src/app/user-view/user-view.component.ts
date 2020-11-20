@@ -7,7 +7,7 @@ import { UserService } from '../services/user.service';
 interface OrderDetails {
 
   orders : Order[];
-  test();
+
 }
 
 @Component({

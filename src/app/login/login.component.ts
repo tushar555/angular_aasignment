@@ -29,11 +29,12 @@ export class LoginComponent implements OnInit {
   }
 
   get userName() {
-    return this.loginForm.get('loginForm.userName');
+
+    return this.loginForm.get('userName');
   }
 
   get passWord() {
-    return this.loginForm.get('loginForm.passWord');
+    return this.loginForm.get('passWord');
   }
 
   onSubmit(): void{

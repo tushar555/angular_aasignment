@@ -1,0 +1,17 @@
+.container {
+  position : relative;
+}
+
+.form-area {
+
+  position : absolute;
+  margin-left: 40%;
+}
+
+label {
+  margin-right: 1rem;
+}
+
+input[type="password"] {
+  margin-left : 6px;
+}

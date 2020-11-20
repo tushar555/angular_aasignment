@@ -5,7 +5,7 @@ import { UserService } from '../services/user.service';
 
 interface Orders {
 
-  orders : Order[];
+  orders: Order[];
 
 }
 
@@ -16,20 +16,20 @@ interface Orders {
 })
 export class AdminViewComponent implements OnInit {
 
-  userName : string;
-  userLoggedIn : boolean = false;
-  ordersArray : Order[];
+  userName: string;
+  userLoggedIn = false;
+  ordersArray: Order[];
 
-  constructor(private route : Router,
-              private userService : UserService) { }
+  constructor(private route: Router,
+              private userService: UserService) { }
 
   ngOnInit(): void {
 
     this.getOrders();
     const loggedInUser = localStorage.getItem('LoggedInUser') || null;
-  this.userName = JSON.parse(loggedInUser).name;
+    this.userName = JSON.parse(loggedInUser).name;
     console.log(loggedInUser);
-    if(!loggedInUser){
+    if (!loggedInUser){
           console.log('User Not foound');
       }else{
           this.userLoggedIn = true;
@@ -51,7 +51,7 @@ export class AdminViewComponent implements OnInit {
 
       getOrders() {
 
-this.userService.getOrders().subscribe( (data : any)=> {
+this.userService.getOrders().subscribe( (data: any) => {
   this.ordersArray = data.orders;
   console.log(this.ordersArray);
 });
