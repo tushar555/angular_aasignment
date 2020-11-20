@@ -1,0 +1,20 @@
+
+  <h5>Selected Order Details</h5>
+  <div class="card">
+    <div class="card-header">
+      <b> Order Id</b> : {{ order.orderId }}
+      <span (click)="closeDetails()">X</span>
+    </div>
+    <div class="card-body">
+      <ul class="list-group">
+        <li class="list-group-item">
+        <b>Product:</b> {{ order.product}}
+        </li>
+        <li class="list-group-item">
+          <b>quantity:</b> {{ order.quantity}}
+          </li>
+      </ul>
+
+
+    </div>
+  </div>

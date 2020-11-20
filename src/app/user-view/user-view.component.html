@@ -1,1 +1,42 @@
-<p>user-view works!</p>
+
+<div class="jumbotron container">
+
+  <div  class="card-header" style="background-color: green;">Welcome to Order App
+    <span (click)="onLogout()"> Logout </span>
+  </div>
+  <!-- <button class="btn btn-primary"(click)="onLogout()">LogOut</button> -->
+
+    <!-- <div class="logout col-md-3" *ngIf="userLoggedIn">
+        <button class="btn btn-primary"(click)="onLogout()">LogOut</button>
+    </div> -->
+
+<h5> welcome {{ userName }}</h5>
+
+<hr>
+<div class="container">
+
+  <div class="row">
+
+     <div class="col col-md-6">
+      <h5> List of Order Placed</h5>
+         <ul class="list-group" *ngFor = "let orders of ordersArray">
+            <li (click)="getOrderDetail(orders)" class="list-group-item">
+            <b>Order Id:</b>  {{ orders.orderId }}
+            </li>
+          </ul>
+
+     </div>
+
+     <div class="col col-md-6">
+
+      <app-order-detail  [order]='selectedOrder' *ngIf="selectedOrder" (onCardclose)="closeCard($event)"></app-order-detail>
+
+     </div>
+  </div>
+
+</div>
+
+
+
+</div>
+

@@ -1,0 +1,9 @@
+
+.card-body{
+  font-size: 14px;
+}
+
+span {
+  float: right;
+  cursor : pointer;
+}

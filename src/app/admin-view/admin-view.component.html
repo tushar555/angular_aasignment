@@ -1,1 +1,30 @@
-<p>admin-view works!</p>
+
+<div class="jumbotron container">
+
+  <div  class="card-header" style="background-color: green;">Welcome to Order App
+    <span (click)="onLogout()"> Logout </span>
+  </div>
+
+
+<h5> welcome {{ userName }}</h5>
+
+    <table class="table">
+      <thead>
+        <tr>
+
+          <th scope="col">OrderId</th>
+          <th scope="col">Product Name</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of ordersArray">
+
+          <td>{{order.orderId}}</td>
+          <td>{{order.product}}</td>
+          <td>{{order.quantity}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+

@@ -7,14 +7,16 @@ import { LoginComponent } from './login/login.component';
 import { UserViewComponent } from './user-view/user-view.component';
 import { AdminViewComponent } from './admin-view/admin-view.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import {HttpClientModule} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http';
+import { OrderDetailComponent } from './order-detail/order-detail.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     UserViewComponent,
-    AdminViewComponent
+    AdminViewComponent,
+    OrderDetailComponent
   ],
   imports: [
     BrowserModule,

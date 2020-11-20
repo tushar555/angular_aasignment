@@ -1,0 +1,18 @@
+.logout {
+    float: right;
+}
+.card-header{
+
+  color: white;
+
+}
+
+.card-header span{
+
+    float: right;
+
+}
+
+li{
+  cursor: pointer;
+}
